@@ -1,0 +1,132 @@
+html,
+body{
+    width : 100%;
+    height : 150%;
+    background-color : rgba(230,230,230,0.5);
+    padding : 0;
+    margin : 0;
+}
+
+header{
+    display : block;
+    width : 100%;
+    height : 200px;
+    margin : 0 auto;
+    position : fixed;
+}
+
+#list{
+    width : 100%;
+    height : 100%;
+    padding-bottom : 220px;
+    overflow: scroll;
+}
+
+#showList{
+    width : 100%;
+    height : 100px;
+    background-color: rgb(239,233,212);
+    font-size : 30px;
+    text-align: center;
+}
+
+.product{
+    width : 100%;
+    height : 100px;
+    background-color: rgba(237,237,237,0.5);
+    padding-left: 10%;
+    font-size: 40px;
+    border-top : 2px solid white;
+    border-bottom : 2px solid white;
+}
+
+#headerLi{
+    width : 100%;
+    height : 100px;
+    background-color: white;
+    padding : 0;
+}
+
+#headerLi > li{
+    float : left;
+}
+
+#headerLi li{
+    width : -webkit-calc(100%/2);
+    width : -moz-calc(100%/2);
+    width : calc(100%/2);
+    height : 100%;
+    
+    list-style: none;
+    
+    text-align: center;
+    
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#headerLi li:HOVER {
+    background-color : rgba(127, 255, 254, 0.3);
+}
+
+p{
+    width : 100%;
+    height : 100%;
+    margin : auto auto;
+}
+
+.selected{
+    background-color : rgba(127, 255, 254, 0.3);
+}
+
+#content{
+    width : 100%;
+    height : 100%;
+    padding-top : 200px;
+    padding-bottom : 220px;
+    overflow: scroll;
+    background-color: rgba(237,237,237,0.5);
+}
+
+#description{
+    width : 100%;
+    height : 170px;
+    bottom : 120px;
+    background-color : rgb(239,233,212);
+    position : fixed;
+    text-align: center;
+    font-size: 40px;
+    padding-top : 40px;
+}
+
+footer{
+    width : 100%;
+    height : 100px;
+    bottom : 0;
+    background-color : white;
+    position : fixed;
+}
+
+footer > ul{
+    width : 100%;
+    height : 100%;
+    padding : 0;
+    margin : 0;
+}
+
+footer > ul > li{
+    list-style : none;
+    float : left;
+}
+
+footer li{
+    width : -webkit-calc(100%/2);
+    height : 100%;
+    border : 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 40px;
+    font-weight : bold;
+    line-height: 40px;
+    padding-top : 20px;
+}

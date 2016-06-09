@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="com.mart.mapper.AllDaoInterface">
+
+	<select id="getBigCategory" resultType="BigCategory">
+		select * from bigCategory;
+	</select>
+	
+	<select id="getSecondCategory" parameterType="int" resultType="SecondCategory">
+		select * from secondCategory 
+		<where>
+			bId = #{bId}
+		</where>
+	</select>
+	
+	<select id="getAllSecondCategory" resultType="SecondCategory">
+		select * from secondCategory 
+		order by bId;
+	</select>
+	
+	<select id="getAllThirdCategory" resultType="ThirdCategory">
+		select * from thirdCategory 
+		order by sId;
+	</select>
+	
+	<select id="getThirdFloorData" resultType="FloorData">
+		select * from product 
+		<where>
+			fFloor = 3;
+		</where>
+	</select>
+	
+	<select id="getThirdFloorProductList" parameterType="string" resultType="FloorData">
+		select * from product
+		<where>
+			fProduct LIKE CONCAT('%', #{selected}, '%') 
+			and fFloor = 3;
+		</where>
+	</select>
+	
+	<select id="getSecondFloorProductList" parameterType="string" resultType="FloorData">
+		select * from product
+		<where>
+			fProduct LIKE CONCAT('%', #{selected}, '%') 
+			and fFloor = 2;
+		</where>
+	</select>
+	
+	<select id="getEntrance" parameterType="int" resultType="FloorData">
+		select * from product 
+		<where>
+			fProduct = '입구' and fFloor = #{floor};
+		</where>
+	</select>
+	
+	<select id="getSecondFloorData" resultType="FloorData">
+		select * from product 
+		<where>
+			fFloor = 2;
+		</where>
+	</select>
+
+</mapper>

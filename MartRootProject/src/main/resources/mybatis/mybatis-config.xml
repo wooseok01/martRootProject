@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE configuration  
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<!-- Type alias -->
+	<typeAliases>
+		<typeAlias alias="BigCategory" type="com.mart.model.BigCategory"/>
+		<typeAlias alias="SecondCategory" type="com.mart.model.SecondCategory"/>
+		<typeAlias alias="ThirdCategory" type="com.mart.model.ThirdCategory"/>
+		<typeAlias alias="FloorData" type="com.mart.model.FloorData"/>
+	</typeAliases>
+
+	<!-- UserMap.xml 등록 -->
+	<mappers>
+		<mapper resource="com/mart/mapper/AllDaoMapper.xml" />
+		
+	</mappers>
+</configuration> 
