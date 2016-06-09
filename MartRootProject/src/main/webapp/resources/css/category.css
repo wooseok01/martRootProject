@@ -2,11 +2,13 @@ html,
 body{
     width : 100%;
     height : 100%;
+    position : relative;
+    overflow: scroll;
 }
 
 #header{
     width : 100%;
-    height : 10%;
+    height : 15%;
     background-color : rgba(215,210,181,0.7);
 }
 
@@ -41,6 +43,7 @@ h1{
     text-align: center;
     font-size: 30px;
     backgroun-color : white;
+    margin-top : 20px;
 }
 
 #contents{
